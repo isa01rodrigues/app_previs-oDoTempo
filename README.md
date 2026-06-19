@@ -37,13 +37,19 @@ O projeto utiliza a API gratuita da **Open-Meteo**, permitindo a busca de dados 
 
 ## 📁 Estrutura do Projeto
 
-
-weather-app/
+temperatura_ia/
 │
-├── index.html # Página principal da aplicação
-├── style.css # Estilos e responsividade
-├── script.js # Lógica da aplicação e consumo da API
-└── README.md
+├── index.html
+├── README.md
+│
+└── assets/
+    ├── css/
+    │   └── style.css
+    │
+    ├── js/
+    │   └── script.js
+    │
+    └── img/ (opcional)
 
 
 ---
