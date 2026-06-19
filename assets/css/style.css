@@ -1,0 +1,267 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#b7d8ff,#d9f5ef,#efe3ff);
+
+    padding:20px;
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+    width:100%;
+    max-width:500px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    animation:fade .8s;
+
+}
+
+/* ===========================
+   TITULO
+=========================== */
+
+h1{
+
+    text-align:center;
+
+    color:#23527c;
+
+    margin-bottom:25px;
+
+    font-size:32px;
+
+}
+
+/* ===========================
+   PESQUISA
+=========================== */
+
+.search-box{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    outline:none;
+
+    background:#eef5ff;
+
+    font-size:16px;
+
+}
+
+.search-box button{
+
+    background:#5aa9ff;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    background:#2b83e6;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.weather-card{
+
+    display:none;
+
+    margin-top:20px;
+
+    text-align:center;
+
+    animation:fade .7s;
+
+}
+
+.weather-card img{
+
+    width:120px;
+
+    margin:10px auto;
+
+}
+
+/* ===========================
+   INFO
+=========================== */
+
+.info{
+
+    display:grid;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+.info p{
+
+    background:#f7fbff;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    color:#444;
+
+    font-size:17px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   LOADING
+=========================== */
+
+.loading{
+
+    display:none;
+
+    text-align:center;
+
+    color:#4b7cb8;
+
+    font-size:18px;
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   ERRO
+=========================== */
+
+.error{
+
+    text-align:center;
+
+    color:red;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   ANIMAÇÃO
+=========================== */
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:600px){
+
+    .container{
+
+        padding:20px;
+
+    }
+
+    h1{
+
+        font-size:26px;
+
+    }
+
+    .search-box{
+
+        flex-direction:column;
+
+    }
+
+    .search-box button{
+
+        width:100%;
+
+    }
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>
+            <i class="fa-solid fa-cloud-sun"></i>
+            Previsão do Tempo
+        </h1>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Digite o nome da cidade">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Pesquisar
+            </button>
+
+        </div>
+
+        <div id="loading" class="loading">
+            Carregando...
+        </div>
+
+        <div id="error" class="error"></div>
+
+        <section id="weather" class="weather-card">
+
+            <h2 id="cityName">Cidade</h2>
+
+            <img id="icon" src="" alt="Ícone do clima">
+
+            <div class="info">
+
+                <p>
+                    🌡️ Temperatura:
+                    <span id="temp">--</span> °C
+                </p>
+
+                <p>
+                    🥵 Sensação:
+                    <span id="feels">--</span> °C
+                </p>
+
+                <p>
+                    💧 Umidade:
+                    <span id="humidity">--</span> %
+                </p>
+
+                <p>
+                    💨 Vento:
+                    <span id="wind">--</span> km/h
+                </p>
+
+                <p>
+                    ☁️ Condição:
+                    <span id="condition">--</span>
+                </p>
+
+                <p>
+                    📅 Consulta:
+                    <span id="date">--</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
